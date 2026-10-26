@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhana Nan — Private Bakery of Healthy Bread</title>
+  <meta name="description" content="Sourdough bread without yeast and chemistry. Browse our assortment and subscribe to morning delivery.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Zhana Nan home">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>Zhana Nan</span>
+    </a>
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true"><span></span></label>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#bread">Our Bread</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#sale">Points of Sale</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Bread on Sourdough without Yeast and Chemistry</h1>
+      <p>Flour, water, salt and time. Baked every night, at your door by morning.</p>
+      <a class="btn" href="#bread">View catalog</a>
+    </section>
+
+    <section id="bread" class="catalog" aria-labelledby="bread-title">
+      <h2 id="bread-title">Our Bread</h2>
+      <ul class="grid">
+        <li>
+          <article class="card">
+            <img src="images/loaf.svg" alt="Rye sourdough loaf" loading="lazy">
+            <h3>Rye Sourdough</h3>
+            <p class="badge">Contains gluten</p>
+            <p><strong>Energy:</strong> 215 kcal / 100 g<br>Protein 6 g · Fat 1.5 g · Carbs 43 g</p>
+            <p><strong>Composition:</strong> rye flour, water, rye starter, sea salt.</p>
+            <p class="price">1 400 ₸</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/loaf.svg" alt="Buckwheat loaf" loading="lazy">
+            <h3>Buckwheat Loaf</h3>
+            <p class="badge free">Gluten-Free</p>
+            <p><strong>Energy:</strong> 190 kcal / 100 g<br>Protein 7 g · Fat 2 g · Carbs 36 g</p>
+            <p><strong>Composition:</strong> buckwheat flour, water, psyllium, sea salt.</p>
+            <p class="price">1 900 ₸</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/loaf.svg" alt="Whole wheat seed bread" loading="lazy">
+            <h3>Seeded Whole Wheat</h3>
+            <p class="badge">Contains gluten</p>
+            <p><strong>Energy:</strong> 245 kcal / 100 g<br>Protein 9 g · Fat 5 g · Carbs 40 g</p>
+            <p><strong>Composition:</strong> whole wheat flour, water, sourdough, flax, sunflower seeds, salt.</p>
+            <p class="price">1 700 ₸</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <img src="images/loaf.svg" alt="Rice and amaranth bread" loading="lazy">
+            <h3>Amaranth &amp; Rice</h3>
+            <p class="badge free">Gluten-Free</p>
+            <p><strong>Energy:</strong> 175 kcal / 100 g<br>Protein 5 g · Fat 1 g · Carbs 37 g</p>
+            <p><strong>Composition:</strong> rice flour, amaranth flour, water, gluten-free starter, salt.</p>
+            <p class="price">2 100 ₸</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="recipes" class="info" aria-labelledby="recipes-title">
+      <h2 id="recipes-title">Recipes</h2>
+      <p>Our starter is 6 years old. Every loaf ferments for 18 hours at room temperature, so the grain is easier to digest and the crust stays crisp for days.</p>
+    </section>
+
+    <section id="sale" class="info" aria-labelledby="sale-title">
+      <h2 id="sale-title">Points of Sale</h2>
+      <p>Bakery shop: Almaty, Abay Ave. 10, daily 7:00–20:00. Farmers' market: Saturdays and Sundays, 9:00–15:00.</p>
+    </section>
+
+    <section id="delivery" class="delivery" aria-labelledby="delivery-title">
+      <h2 id="delivery-title">Subscribe to morning delivery</h2>
+      <form action="#" method="post">
+        <label>Name
+          <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" placeholder="+7 700 000 00 00" required pattern="\+?[0-9 ()\-]{10,18}" autocomplete="tel">
+        </label>
+        <label>Delivery Address
+          <input type="text" name="address" placeholder="Street, building, apartment" required minlength="5" autocomplete="street-address">
+        </label>
+        <label>Frequency
+          <select name="frequency" required>
+            <option value="" disabled selected>Choose frequency</option>
+            <option>Every day</option>
+            <option>Every other day</option>
+            <option>Weekly</option>
+          </select>
+        </label>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacts" class="site-footer">
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#bread">Our Bread</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#sale">Points of Sale</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="legal-title">
+      <h2 id="legal-title">Legal information</h2>
+      <p>Raw materials compliance: flour and grain certificates (TR CU 021/2011, TR CU 015/2011), available on request. Private entrepreneur, BIN 000000000000.</p>
+      <p>Contacts: +7 700 000 00 00 · hello@zhananan.kz</p>
+    </section>
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span>Dark theme</span>
+    </label>
+    <p><small>© 2026 Zhana Nan. All rights reserved.</small></p>
+  </footer>
+</body>
+</html>
